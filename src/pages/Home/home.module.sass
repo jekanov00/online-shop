@@ -1,0 +1,101 @@
+.header
+  position: sticky
+  top: 0
+  background-color: #221F1F
+  color: #FFFFFF
+  font-size: 16px
+
+  .header_container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 10%
+    padding: 0 40px
+    min-height: 72px
+
+    .logo
+      margin-right: 35px
+
+      .logo_img
+        width: 150px
+        object-fit: contain
+        padding-bottom: 8px
+
+    .catalog
+      padding: 5px 8px 2px
+      border-radius: 5px
+      display: flex
+      align-items: center
+      outline: none
+      border: none
+      background-color: #fff3
+      transition: background-color 0.7s
+
+      .catalog_icon
+        fill: #ffffff
+        width: 35px
+        height: 35px
+
+      .catalog_text
+        padding: 0 5px
+        font-size: 17px
+        color: #fff
+
+      &:hover
+        cursor: pointer
+        background-color: #fff6
+
+    .catalog
+      margin-right: 35px
+
+    .search
+      margin-right: 35px
+      display: inline-block
+      flex-grow: 1
+
+    .searchForm
+      display: flex
+      justify-content: center
+      flex-wrap: nowrap
+
+      .searchForm_input
+        padding: 0 40px
+        height: 40px
+        border: none
+        font-size: 15px
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+        flex-grow: 1
+
+      .searchForm_submit
+        padding: 0 16px
+        height: 40px
+        border: none
+        background-color: #00A046
+        color: #FFFFFF
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+        flex-grow: 0
+        transition: background-color 0.7s
+
+        &:hover
+          background-color: #00bc52
+
+    .profile
+      display: flex
+      align-items: center
+
+      .profile_button
+        background-color: inherit
+        border: none
+        transition: background-color 0.7s
+        border-radius: 5px
+        padding: 0 6px
+
+        .profile_button_icon
+          fill: #fff
+          height: 30px
+          margin-top: 5px
+
+        &:hover
+          background-color: #fff3
